@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <a class="navbar-brand" href="#"> <img class="imgicon" src="https://cdn-icons-png.flaticon.com/512/5470/5470044.png?ga=GA1.1.979865094.1697005373" ></a>
+  <h1 class="text-center mr-auto"> cart</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cart of cart">
+        <td>{{ cart.products.productName }}</td>
+      </tr>
+    </tbody>
+  </table>

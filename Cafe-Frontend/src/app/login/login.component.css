@@ -1,0 +1,22 @@
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .bgimg1{
+
+    height: 89.8vh;
+    background-image: url("https://img.freepik.com/free-photo/frothy-cappuccino-elegant-wooden-coffee-table-generated-by-ai_188544-9955.jpg?w=1060&t=st=1700625234~exp=1700625834~hmac=d26f67da642001ec784dd7ddb01467f4688d319f12b3d6891116428af1de9aaa");
+    background-size: cover;
+    background-position: center;
+ }
+ .imgicon
+{
+    top:auto;
+    height: 30px;
+    width: 30px;
+}

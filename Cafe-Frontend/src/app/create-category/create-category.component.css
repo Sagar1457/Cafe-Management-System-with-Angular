@@ -1,0 +1,15 @@
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .imgicon
+{
+    top:auto;
+    height: 30px;
+    width: 30px;
+}

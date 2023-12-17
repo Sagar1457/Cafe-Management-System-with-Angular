@@ -1,0 +1,117 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand" href="#"> <img class="imgicon" src="https://cdn-icons-png.flaticon.com/512/5470/5470044.png?ga=GA1.1.979865094.1697005373" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Category</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="categories" routerLinkActive="active">categories</a>
+            <a class="dropdown-item" routerLink="create-category" routerLinkActive="active">Create-category</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Products</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="create-product" routerLinkActive="active">Create-product</a>
+            <a class="dropdown-item" routerLink="products" routerLinkActive="active">products</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" (click)="Search()">Search</button>
+      </form>
+      <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <b>Cart</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="cart-list" routerLinkActive="active">Cart-Deatils</a>
+          <a class="dropdown-item" routerLink="user-cart" routerLinkActive="active">userCart-Deatils</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Users</b></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="users" routerLinkActive="active">Users-List</a>
+            <a class="dropdown-item" routerLink="../login" routerLinkActive="active">Login</a>
+            <div class="dropdown-divider"></div>
+            <button class="btn btn-outline-danger my-2 my-sm-0 m-2" (click)="Logout()">Logout</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" (click)="getproduct()" src="assets\imgs\1.webp" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Chocolate Cofee</h5>
+        <p class="card-text">Coffee and Chocolate, an Adventure Taste Exploration..</p>
+        <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" (click)="getproduct()" src="assets\imgs\5.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Cofee</h5>
+        <p class="card-text">You can't buy happiness, but you can buy coffee, and that's pretty close..</p>
+        <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" (click)="getproduct()" src="assets\imgs\2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Chicken Biryani</h5>
+        <p class="card-text">Happiness is a plate full of biryani..</p>
+        <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" (click)="getproduct()" src="assets\imgs\4.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Chocolate Cake</h5>
+        <p class="card-text">All you need is love and a slice of chocolate cake..</p>
+        <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" (click)="getproduct()" src="assets\imgs\4.webp" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Masala Tea</h5>
+        <p class="card-text">Tea is the elixir of life, bringing tranquility to my weary soul..</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" (click)="getproduct()" src="assets\imgs\3.webp" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Ginger Tea</h5>
+        <p class="card-text">Tea is the elixir of life, bringing tranquility to my weary soul..</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

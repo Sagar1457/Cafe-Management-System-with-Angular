@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand" href="#"> <img class="imgicon" src="https://cdn-icons-png.flaticon.com/512/5470/5470044.png?ga=GA1.1.979865094.1697005373" ></a>
+    <h1 class="text-center mr-auto">create-category</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+<div >
+<div class="bg">
+    <form
+        (ngSubmit)="onSubmit()">
+    <div class="form-row align-items-center table-striped">
+        <div class="col-sm-8 m-2 ">
+            <input type="text" placeholder="category name" class="form-control" id="username" name="username" [(ngModel)]="category.name">
+        </div>
+        <div class="col-auto my-1">
+        <button type="submit" class="btn btn-success mb-2">Submit</button>
+        </div>
+    </div>
+</form>
+</div>
+</div>

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand" href="#"> <img class="imgicon" src="https://cdn-icons-png.flaticon.com/512/5470/5470044.png?ga=GA1.1.979865094.1697005373" ></a>
+    <h1 class="text-center mr-auto">categorylist</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>category_name</th>
+                    <th>products</th>
+                    <th>Action</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr *ngFor="let category of categories, let i=index">
+                     <td>{{i+1}}</td>
+                     <td>{{category.name}}</td>
+                     <td>
+                        <ul>
+                            <li *ngFor="let products of category.proudcts.productName">{{category.proudcts.productName}}</li>
+                        </ul>
+                    </td>
+                     <td><button class="btn btn-primary m-2" (click)="updatecategory(category.id)">Update</button></td>
+                     <td><button class="btn btn-danger m-2 " (click)="deletecategory(category.id)">Delete</button></td>
+                 </tr>
+             </tbody>
+        </table>
+
+
